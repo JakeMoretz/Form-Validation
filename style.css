@@ -1,0 +1,60 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 575px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+div {
+    height: 100px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;  
+}
+
+label {
+    padding: 10px;
+    font-size: 1.5em;    
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0, 0.3)
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 10px auto 5px auto;
+    border: 1px solid rgb(0, 0, 0, 0.3)
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 500ms ease-in-out;
+}
+
