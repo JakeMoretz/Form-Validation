@@ -13,7 +13,7 @@ body {
 }
 
 form {
-    height: 575px;
+    height: 600px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -58,3 +58,7 @@ button:hover {
     transition: transform 500ms ease-in-out;
 }
 
+.error-msg {
+    color: red;
+    text-align: center;
+}
