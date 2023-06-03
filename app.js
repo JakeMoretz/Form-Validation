@@ -82,24 +82,23 @@ function validatePassword() {
     }
 }
 
-// function validateConfirmPass() {
-//     let passInput = document.querySelector("#password");
-//     const confirmPass = document.querySelector("#confirm-pass");
-//     // const confirmP = document.querySelector("#confirm-pass");
-//     const confirmPassMsg = document.querySelector(".confirm-pass-msg");
+function validateConfirmPass() {
+    let passInput = document.querySelector("#password");
+    const confirmPass = document.querySelector("#confirm-pass");
+    const confirmPassMsg = document.querySelector(".confirm-pass-msg");
 
-//     if (confirmPass.validity.valueMissing) {
-//         document.querySelector('.input5').style.outline = '1px solid red';
-//         confirmPassMsg.textContent = "Must Confirm Password";
-//     } if (confirmPass.value !== passInput.value) {
-//         document.querySelector('.input5').style.outline = '1px solid red';
-//         confirmPassMsg.textContent = "Confirm Password";
-//     } else if (confirmPass.value === passInput.value) {
-//         document.querySelector('.input5').style.outline =
-//         '1px solid rgb(0, 0, 0, 0.3)';
-//         confirmPassMsg.textContent = '';
-//     }
-// }
+    if (confirmPass.value !== passInput.value) {
+        document.querySelector('.input5').style.outline = '1px solid red';
+        confirmPassMsg.textContent = "Confirm Password";
+    } if (confirmPass.value == '') {
+        document.querySelector('.input5').style.outline = '1px solid red';
+        confirmPassMsg.textContent = "Must Confirm Password";
+    } else if (confirmPass.value === passInput.value){
+        document.querySelector('.input5').style.outline =
+        '1px solid rgb(0, 0, 0, 0.3)';
+        confirmPassMsg.textContent = '';
+    }
+}
 
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -107,5 +106,5 @@ submitBtn.addEventListener('click', (event) => {
     validateCountry();
     validateZip();
     validatePassword();
-    // validateConfirmPass();
+    validateConfirmPass();
 });
